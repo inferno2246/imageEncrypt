@@ -23,7 +23,7 @@ public class decrypt {
         for(i=0; i<EncrImg.getHeight();i++){
             for(j=0; j<EncrImg.getWidth(); j++){
                 clr = EncrImg.getRGB(j,i);
-                r = ((clr & 0x00ff0000) >> 16)-220;
+                r = ((clr & 0x00ff0000) >> 16)-180;
                 if(r > 255){
                     diff = r-255;
                     r = diff;
