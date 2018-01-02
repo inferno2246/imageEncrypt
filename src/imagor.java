@@ -23,21 +23,21 @@ public class imagor {
         for(i=0; i<EncrImg.getHeight();i++){
             for(j=0; j<EncrImg.getWidth(); j++){
                 clr = EncrImg.getRGB(j,i);
-                r = ((clr & 0x00ff0000) >> 16)+2;
+                r = ((clr & 0x00ff0000) >> 16)+180;
                 if(r > 255){
                     diff = r-255;
                     r = diff;
                 }else if(r < 0){
                     r = 255+r;
                 }
-                g = ((clr & 0x0000ff00) >> 8)+2;
+                g = ((clr & 0x0000ff00) >> 8)+200;
                 if(g > 255){
                     diff = g-255;
                     g = diff;
                 }else if(g < 0){
                     g = 255+g;
                 }
-                b = (clr & 0x000000ff)+2;
+                b = (clr & 0x000000ff)+220;
                 if(b > 255){
                     diff = b-255;
                     b = diff;
